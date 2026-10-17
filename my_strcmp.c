@@ -9,15 +9,15 @@ int my_strcmp(char str1[], char str2[]) {
         }
         i++;
     }
-    return 0;
+    return str1-str2;
 }
 int main() {
     SetConsoleOutputCP(65001);
     char str1[100];
     char str2[100];
-    printf("输入第一个字符吧: ");
+    printf("输入第一个字符串吧: ");
     scanf("%s", str1);
-    printf("输入第二个字符吧: ");
+    printf("输入第二个字符串吧: ");
     scanf("%s", str2);
     int result = my_strcmp(str1, str2);
     if (result < 0) {
